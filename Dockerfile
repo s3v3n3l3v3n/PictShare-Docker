@@ -45,7 +45,7 @@ RUN mkdir -p /usr/share/nginx/html
 RUN chown -Rf nginx:nginx /usr/share/nginx/html
 
 WORKDIR /usr/share/nginx/html
-RUN curl -O https://codeload.github.com/chrisiaut/pictshare/zip/master
+RUN curl -O https://codeload.github.com/s3v3n3l3v3n/pictshare/zip/master
 RUN unzip master
 RUN mv pictshare-master/* . && rm master && rm -r pictshare-master
 
